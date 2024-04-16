@@ -22,14 +22,44 @@
 
 // console.log(`Result ${result}`);
 
-function loginUserMessage(username = "sam"){ //default value is given to the parameter(default parameter)
-    // if(username === undefined){
-    if(!username){
-        console.log("Please enter a username.")
-        return;
-    }
-    return `${username} just logged in`
-}
+// function loginUserMessage(username = "sam"){ //default value is given to the parameter(default parameter)
+//     // if(username === undefined){
+//     if(!username){
+//         console.log("Please enter a username.")
+//         return;
+//     }
+//     return `${username} just logged in`
+// }
 
 // console.log(loginUserMessage("Siddhant"))
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
+
+// function calculateCartPrice(...num1){       //rest operator    
+//     return num1;
+// }
+
+// console.log(calculateCartPrice(200,300,400));
+
+const user = {
+    username: "Siddhant",
+    price: "199"
+}
+
+function handleObject(anyObject){
+    console.log(`user name is ${anyObject.username} and price is ${anyObject.price}`)
+}
+
+// handleObject(user);
+handleObject({
+    username: "sam",
+    price: 399
+});
+
+const myNewArray = [200,400,100,600];
+
+function returnSecondValue(getArray){
+    return getArray[1];
+}
+
+console.log(returnSecondValue(myNewArray));
+
