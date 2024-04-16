@@ -40,54 +40,86 @@
 
 // objects part 2
 // const tinderUser = new Object()  //singleton object
-const tinderUser = {}   //non-singleton object
+// const tinderUser = {}   //non-singleton object
 
-tinderUser.id = "123abc"
-tinderUser.name = "Samay"
-tinderUser.isLoggedIn = false;
+// tinderUser.id = "123abc"
+// tinderUser.name = "Samay"
+// tinderUser.isLoggedIn = false;
 
 // console.log(tinderUser);
 
-const regularUser = {
-    email : "some@example.com",
-    fullName : {
-        userFullname : {
-            firstName : "Siddhant",
-            lastName : "Ashok"
-        }
-    }
-}
+// const regularUser = {
+//     email : "some@example.com",
+//     fullName : {
+//         userFullname : {
+//             firstName : "Siddhant",
+//             lastName : "Ashok"
+//         }
+//     }
+// }
 
-console.log(regularUser.fullName?.userFullname.firstName);
+// console.log(regularUser.fullName?.userFullname.firstName);
 
 
-const obj1 = {1:"1",2:"2"};
-const obj2 = {3:"a",4:"b"};
-const obj4 = {5:"a",6:"b"};
+// const obj1 = {1:"1",2:"2"};
+// const obj2 = {3:"a",4:"b"};
+// const obj4 = {5:"a",6:"b"};
 
 // const obj3 = Object.assign({}, obj1, obj2, obj4);
 
 // const obj3 = {...obj1, ...obj2, ...obj4};
 // console.log(obj3);
 
-const users = [
-    {
-        id:1,
-        email:"example@yop.com"
-    },{
+// const users = [
+//     {
+//         id:1,
+//         email:"example@yop.com"
+//     },{
 
-    },{
+//     },{
 
-    }
-]
+//     }
+// ]
 
-users[1].email
+// users[1].email
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
-console.log(tinderUser.hasOwnProperty('isLoggedI'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedI'));
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+//course.courseInstructor
+
+const {courseInstructor : instructor} = course
+// console.log(courseInstructor);
+console.log(instructor);
+
+
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "ginger")
+
+// Json below
+// {
+//     "name":"hitesh",
+//     "coursename":"js in hindi",
+//     "price":"free"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
