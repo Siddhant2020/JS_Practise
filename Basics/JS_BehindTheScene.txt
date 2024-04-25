@@ -1,0 +1,8 @@
+Global Execution Context
+`this`
+
+1 Memory Phase
+2 Execution Phase
+
+In browser(google chrome) this or Global object is Window
+

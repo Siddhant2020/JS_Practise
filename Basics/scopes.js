@@ -46,4 +46,9 @@
     // return num +2
 // }
 
-// console.log(addTwo(5));  // expression executes if called before implementation
+// console.log(addTwo(5));  // expression executes if called before 
+
+// var addOne;
+// addOne = 1;
+// console.log(addOne);
+// // addOne = 1;
