@@ -24,12 +24,24 @@
 // }
 
 //  break and continue
-for (let index = 0; index < 20; index++) {
-    // const element = array[index];
+// for (let index = 0; index < 20; index++) {
+//     // const element = array[index];
 
-    if (index == 5) {
-        console.log('Detected')
-        continue;
-    }
-    console.log(`value is ${index}`);
-}
+//     if (index == 5) {
+//         console.log('Detected')
+//         continue;
+//     }
+//     console.log(`value is ${index}`);
+// }
+
+// let value = 1;
+// while (value <= 10) {
+//     console.log(value)
+//     value++;
+// }
+
+// let value = 1;
+// do {
+//     console.log(value);
+//     value++;
+// } while (value <=10);
