@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #ffff">
+    <!-- div.parent>div.day*4 | the shortcut for below code-->
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     const element = parent.children[i].innerHTML;
+    //     console.log(element);
+    // }
+
+    // parent.children[1].style.color = 'orange';
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    // const day1 = document.querySelector('.day');
+    // console.log(day1);
+
+    // console.log(day1.parentElement);
+    // console.log(day1.nextElementSibling);
+
+    console.log("NODES: " , parent.childNodes);     //this is not exact child instead it is a whole tree of children
+
+    
+
+
+</script>
+</html>
