@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px 10px;
+            border-style: none;
+            border-radius: 5px;
+        }
+
+        button:hover{
+            opacity: 0.7;
+        }
+
+        button:active{
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chai aur JS</h1>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    const sayDate = function(str){
+        // console.log('Siddhant');
+        // console.log(Date.now());
+        console.log(str);
+    };
+    let intervalId;
+
+    document.querySelector('#start').addEventListener('click', ()=> {
+        intervalId = setInterval(sayDate,1000, 'hi');
+    })
+
+    document.querySelector('#stop').addEventListener('click', ()=> {
+        clearInterval(intervalId);
+    });
+</script>
+</html>
